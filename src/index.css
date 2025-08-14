@@ -1,0 +1,6 @@
+@import "tailwindcss";
+
+@theme {
+  --font-family-sans-serif: "Poppins", sans-serif;
+  --font-family-mono: "Space Grotesk", monospace;
+}
