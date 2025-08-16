@@ -99,7 +99,7 @@ const Events = () => {
         </div>
 
         <div className="mt-20">
-          <h1 className="text-5xl font-bold leading-tight font-family-mono text-[#6E7176] mb-12">
+          <h1 className="text-5xl font-medium leading-tight font-family-mono text-[#6E7176] mb-12">
             Upcoming Events
           </h1>
 

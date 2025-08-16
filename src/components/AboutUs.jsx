@@ -1,4 +1,24 @@
+import { animate, motion, useMotionValue, useTransform } from "framer-motion";
+import { useEffect, useState } from "react";
+
 const AboutUs = () => {
+  const count = useMotionValue(0);
+  const rounded = useTransform(count, (latest) => Math.round(latest));
+  const [displayValue, setDisplayValue] = useState(0);
+
+  useEffect(() => {
+    const unsubscribe = rounded.onChange((latest) => {
+      setDisplayValue(latest);
+    });
+
+    const controls = animate(count, 500, { duration: 5 });
+
+    return () => {
+      controls.stop();
+      unsubscribe();
+    };
+  }, [count, rounded]);
+
   return (
     <div className="min-h-screen px-6 py-24 bg-[#F7F8FA]" id="about">
       <div className="max-w-7xl mx-auto flex flex-col items-center justify-center">
@@ -39,40 +59,61 @@ const AboutUs = () => {
             </ul>
           </div>
 
-          <div className="grid grid-cols-2 grid-rows-2 gap-4">
-            <div className="row-1 p-4 px-14 py-8 bg-[#1077ED] rounded-xl space-y-4">
+          <motion.div
+            className="grid grid-cols-2 grid-rows-2 gap-4"
+            initial={{ opacity: 0, scale: 0.8 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.5, delay: 0.2 }}
+          >
+            <motion.div
+              className="row-1 p-4 px-14 py-8 bg-[#1077ED] rounded-xl space-y-4"
+              whileHover={{ scale: 1.05 }}
+              transition={{ type: "spring", stiffness: 300 }}
+            >
               <h2 className="text-[30px] font-family-sans-serif text-white leading-[150%] tracking-[-4%] ">
-                500+
+                {displayValue}+
               </h2>
               <p className="text-[15.24px] text-white leading-[120%] tracking-[-3%]">
                 Lives Transformed
               </p>
-            </div>
-            <div className="row-1 p-4 px-14 py-8 bg-[#29D77B] rounded-xl space-y-4">
+            </motion.div>
+            <motion.div
+              className="row-1 p-4 px-14 py-8 bg-[#29D77B] rounded-xl space-y-4"
+              whileHover={{ scale: 1.05 }}
+              transition={{ type: "spring", stiffness: 300 }}
+            >
               <h2 className="text-[30px] font-family-sans-serif text-white leading-[150%] tracking-[-4%]">
                 95%
               </h2>
               <p className="text-[15.24px] text-white leading-[120%] tracking-[-3%]">
                 Job Placement Rate
               </p>
-            </div>
-            <div className="bg-[#A550FD] rounded-xl p-4 px-14 py-8 space-y-4">
+            </motion.div>
+            <motion.div
+              className="bg-[#A550FD] rounded-xl p-4 px-14 py-8 space-y-4"
+              whileHover={{ scale: 1.05 }}
+              transition={{ type: "spring", stiffness: 300 }}
+            >
               <h2 className="text-[30px] font-family-sans-serif text-white leading-[150%] tracking-[-4%]">
                 50+
               </h2>
               <p className="text-[15.24px] text-white leading-[120%] tracking-[-3%]">
                 Industry Partners
               </p>
-            </div>
-            <div className="bg-[#F84829] rounded-xl p-4 px-8 py-6 space-y-4">
+            </motion.div>
+            <motion.div
+              className="bg-[#F84829] rounded-xl p-4 px-8 py-6 space-y-4"
+              whileHover={{ scale: 1.05 }}
+              transition={{ type: "spring", stiffness: 300 }}
+            >
               <h2 className="text-[30px] font-family-sans-serif text-white leading-[150%] tracking-[-4%]">
                 4.9/5
               </h2>
               <p className="text-[15.24px] text-white leading-[120%] tracking-[-3%]">
                 Student Rating
               </p>
-            </div>
-          </div>
+            </motion.div>
+          </motion.div>
         </div>
 
         {/* <div className="mt-5">

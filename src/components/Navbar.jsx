@@ -22,6 +22,8 @@ const Navbar = () => {
             {navLinks.map((link, index) => (
               <Link
                 key={index}
+                smooth={true}
+                duration={500}
                 className="cursor-pointer font-family-sans-serif text-[13.33px] text-[#7D7D7D] font-normal hover:text-black transition-colors duration-200"
                 to={link.href}
               >
