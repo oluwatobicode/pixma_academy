@@ -36,7 +36,7 @@ const Events = () => {
           </div>
 
           <div className="flex flex-row items-center justify-center gap-8 mt-12">
-            <div className="bg-[#202636] p-8 w-[609px] h-[390px] rounded-[24px] flex flex-col justify-between">
+            <div className="bg-[#202636] p-8 w-[510px] h-[390px] rounded-[24px] flex flex-col justify-between">
               <div>
                 <h1 className="text-4xl text-white font-normal font-family-mono leading-tight mb-4">
                   Product Leadership Summit
