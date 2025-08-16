@@ -17,12 +17,12 @@ const Navbar = () => {
           <img src={logo} alt="Pixa Academy Logo" className="w-20 h-7" />
         </div>
 
-        <div className="hidden md:flex items-center justify-center">
+        <div className="hidden md:flex items-center justify-center mx-auto">
           <div className="flex items-center justify-center gap-8 ">
             {navLinks.map((link, index) => (
               <Link
                 key={index}
-                className="cursor-pointer text-[13.33px] text-[#7D7D7D] font-normal hover:text-black transition-colors duration-200"
+                className="cursor-pointer font-family-sans-serif text-[13.33px] text-[#7D7D7D] font-normal hover:text-black transition-colors duration-200"
                 to={link.href}
               >
                 {link.name}
@@ -31,11 +31,11 @@ const Navbar = () => {
           </div>
         </div>
 
-        <div className="hidden md:flex items-center justify-center gap-4 ml-auto">
-          <button className="cursor-pointer py-2 rounded-[12px] text-[13px] font-normal text-black pr-[33.33px] hover:text-[#1077ED] transition-colors duration-200">
+        <div className="flex items-center justify-center gap-4">
+          <button className="cursor-pointer p-1 w-24 h-11 rounded-[12px] text-[13px] font-family-sans-serif font-normal text-black  hover:text-[#1077ED] transition-colors duration-200">
             Login
           </button>
-          <button className="w-36 h-11 cursor-pointer py-2 bg-[#1077ED] rounded-[12px] text-[13px] font-normal text-white">
+          <button className="w-36 h-11 p-1 cursor-pointer bg-[#1077ED] font-family-sans-serif rounded-[12px] text-[13px] font-normal text-white">
             Join Community
           </button>
         </div>
