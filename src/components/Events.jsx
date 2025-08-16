@@ -28,7 +28,7 @@ const Events = () => {
             <h1 className="text-5xl font-medium leading-tight font-family-mono text-[#151B28] mb-6">
               Events & Workshops
             </h1>
-            <p className="text-xl leading-relaxed text-[#4A4D54] font-light">
+            <p className="text-xl leading-relaxed font-family-sans-serif text-[#4A4D54] font-light">
               Join our community events, workshops, and networking sessions
               designed to accelerate your learning and connect you with
               like-minded professionals.
@@ -36,9 +36,9 @@ const Events = () => {
           </div>
 
           <div className="flex flex-row items-center justify-center gap-8 mt-12">
-            <div className="bg-[#202636] p-8 w-[510px] h-[390px] rounded-[24px] flex flex-col justify-between">
+            <div className="bg-[#202636] p-8 w-[609px] h-[390px] rounded-[24px] flex flex-col justify-between">
               <div>
-                <h1 className="text-4xl text-white font-normal font-family-mono leading-tight mb-4">
+                <h1 className="text-[32px] text-white font-normal font-family-mono leading-tight mb-4">
                   Product Leadership Summit
                 </h1>
                 <p className="text-white text-lg font-normal font-family-sans-serif leading-relaxed tracking-tight mb-6">
@@ -88,7 +88,7 @@ const Events = () => {
               </div>
             </div>
 
-            <div className="w-[609px] h-[390px] rounded-[24px] overflow-hidden">
+            <div className="w-[501px] h-[390px] rounded-[24px] overflow-hidden">
               <img
                 src="/events.png"
                 alt="events png"
