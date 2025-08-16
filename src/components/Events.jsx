@@ -22,7 +22,7 @@ const Events = () => {
 
   return (
     <div className="min-h-screen px-6 py-24 bg-white" id="events">
-      <div className="max-w-7xl mx-auto">
+      <div className="max-w-6xl mx-auto">
         <div className="flex flex-col items-center justify-center mb-16">
           <div className="max-w-3xl text-center space-y-4">
             <h1 className="text-5xl font-medium leading-tight font-family-mono text-[#151B28] mb-6">

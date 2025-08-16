@@ -58,7 +58,7 @@ const Community = () => {
 
   return (
     <div className="min-h-screen px-6 py-24 bg-[#F7F8FA]" id="community">
-      <div className="max-w-7xl mx-auto">
+      <div className="max-w-6xl mx-auto">
         <div className="flex flex-col items-center justify-center text-center mb-16">
           <div className="max-w-3xl">
             <h1 className="text-5xl font-bold font-family-mono leading-tight text-[#151B28] mb-6">

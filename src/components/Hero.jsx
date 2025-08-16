@@ -3,7 +3,7 @@ import { Link } from "react-scroll";
 const Hero = () => {
   return (
     <div className="min-h-screen px-6 py-24" id="hero">
-      <div className="max-w-7xl mx-auto h-screen flex items-center gap-10 justify-center">
+      <div className="max-w-6xl mx-auto h-screen flex items-center gap-10 justify-center">
         <div className="flex-1  pr-12">
           <h1 className="text-5xl font-medium leading-[1.34] font-family-mono tracking-tight mb-8">
             Efficient training for Product Designers (UI/UX) & Product Managers

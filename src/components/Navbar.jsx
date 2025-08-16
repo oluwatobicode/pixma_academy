@@ -12,7 +12,7 @@ const Navbar = () => {
 
   return (
     <nav className="fixed top-0 z-50  w-full p-6 md:h-[95px] bg-white">
-      <div className="mx-auto max-w-7xl flex items-center">
+      <div className="mx-auto max-w-6xl flex items-center">
         <div className="mr-auto">
           <img src={logo} alt="Pixa Academy Logo" className="w-20 h-7" />
         </div>

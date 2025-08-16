@@ -19,7 +19,7 @@ const Tracks = () => {
 
   return (
     <div className="min-h-screen px-6 py-24 bg-white" id="programs">
-      <div className="max-w-7xl mx-auto   flex flex-col items-center justify-center mb-16">
+      <div className="max-w-6xl mx-auto   flex flex-col items-center justify-center mb-16">
         <div className="text-center max-w-2xl">
           <h1 className="font-family-mono text-[40px] tracking-[-4%] leading-[1.34] font-normal mb-8">
             Learn. Create. Lead.

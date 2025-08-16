@@ -25,7 +25,7 @@ const Footer = () => {
 
   return (
     <footer className="bg-white">
-      <div className="max-w-7xl mx-auto  py-16">
+      <div className="max-w-6xl mx-auto  py-16">
         <div className="grid grid-cols-4 lg:grid-cols-5 gap-12 mb-16 ">
           <div className="lg:col-span-2">
             <div className="flex flex-col space-y-6">

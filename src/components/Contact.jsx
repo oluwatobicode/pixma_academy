@@ -6,7 +6,7 @@ import { FaLinkedinIn } from "react-icons/fa";
 const Contact = () => {
   return (
     <div className="min-h-screen px-6 py-24 bg-[#F7F8FA]" id="contact">
-      <div className="max-w-7xl mx-auto flex flex-col items-center justify-center">
+      <div className="max-w-6xl mx-auto flex flex-col items-center justify-center">
         <div className="flex flex-row items-center justify-center gap-12">
           <div className="w-[480px] h-[750px] rounded-xl overflow-hidden">
             <img
@@ -16,7 +16,7 @@ const Contact = () => {
             />
           </div>
 
-          <div className="w-[700px] flex flex-col">
+          <div className="w-[625px] flex flex-col">
             <h1 className="text-[40px] text-center font-normal leading-tight font-family-mono text-[#151B28] mb-6">
               Let's Build the Future Together
             </h1>

@@ -21,7 +21,7 @@ const AboutUs = () => {
 
   return (
     <div className="min-h-screen px-6 py-24 bg-[#F7F8FA]" id="about">
-      <div className="max-w-7xl mx-auto flex flex-col items-center justify-center">
+      <div className="max-w-6xl mx-auto flex flex-col items-center justify-center">
         <div className="text-center max-w-2xl">
           <h1 className="text-[40px] font-normal leading-[1.34] font-family-mono">
             Who We Are
