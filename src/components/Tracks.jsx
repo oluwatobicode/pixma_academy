@@ -53,7 +53,7 @@ const Tracks = () => {
                   {trackLearns.map((el, index) => (
                     <div
                       key={index}
-                      className="text-black px-2 py-2 bg-[#E4E4E4] rounded-xl text-[12px] font-normal font-family-sans-serif"
+                      className="text-black px-3 py-3 bg-[#E4E4E4] rounded-xl text-[10px] font-normal font-family-sans-serif"
                     >
                       {el.name}
                     </div>
@@ -89,7 +89,7 @@ const Tracks = () => {
                   {trackLearns.map((el, index) => (
                     <div
                       key={index}
-                      className="text-black px-2 py-2 bg-[#E4E4E4] rounded-xl text-[12px] font-normal font-family-sans-serif"
+                      className="text-black px-3 py-3 bg-[#E4E4E4] rounded-xl text-[10px] font-normal font-family-sans-serif"
                     >
                       {el.name}
                     </div>
