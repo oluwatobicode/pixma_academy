@@ -1,5 +1,6 @@
 import { animate, motion, useMotionValue, useTransform } from "framer-motion";
 import { useEffect, useState } from "react";
+import AnimatedText from "../animation/AnimatedText";
 
 const AboutUs = () => {
   const count = useMotionValue(0);
@@ -26,12 +27,22 @@ const AboutUs = () => {
           <h1 className="text-[40px] font-normal leading-[1.34] font-family-mono">
             Who We Are
           </h1>
-          <p className="text-lg leading-[1.34] tracking-tight text-[#4A4D54] mb-8 font-family-sans-serif">
+
+          <AnimatedText
+            text={[
+              "PIXMA Academy is a creative learning and mentorship hub dedicated to",
+              "empowering individuals with industry-ready skills, turning potential into real",
+              "opportunities through practical programs and career connections",
+            ]}
+            repeatDelay={1000}
+            className="text-lg leading-[1.34] tracking-tight text-[#4A4D54] mb-8 font-family-sans-serif"
+          />
+          {/* <p className="text-lg leading-[1.34] tracking-tight text-[#4A4D54] mb-8 font-family-sans-serif">
             PIXMA Academy is a creative learning and mentorship hub dedicated to
             empowering individuals with industry-ready skills, turning potential
             into real opportunities through practical programs and career
             connections.
-          </p>
+          </p> */}
         </div>
 
         <div className="flex flex-row items-center gap-10 mt-8">
